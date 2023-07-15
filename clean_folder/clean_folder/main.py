@@ -88,8 +88,8 @@ def main(folder: Path):
     for folder in parser.FOLDERS[::-1]:
         handle_folder(folder)
 
-if __name__ == "__main__":
-    if sys.argv[1]:
-        folder_for_scan = Path(sys.argv[1])
-        print(f"Start in folder: {folder_for_scan.resolve()}")
-        main(folder_for_scan.resolve())
+# if __name__ == "__main__":
+#     if sys.argv[1]:
+#         folder_for_scan = Path(sys.argv[1])
+#         print(f"Start in folder: {folder_for_scan.resolve()}")
+#         main(folder_for_scan.resolve())
