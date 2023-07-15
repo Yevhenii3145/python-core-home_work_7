@@ -1,8 +1,8 @@
 from pathlib import Path
 import shutil
 import sys
-import file_parser as parser
-from normalize import normalize
+import clean_folder.file_parser as parser
+from clean_folder.normalize import normalize
 
 def move_media(filename: Path,target_folder: Path) -> None:
     target_folder.mkdir(exist_ok=True, parents=True)

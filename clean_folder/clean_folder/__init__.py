@@ -1,6 +1,6 @@
 from pathlib import Path
 import sys
-from main import main
+from clean_folder.main import main
 
 def start_work():
     if sys.argv[1]:
