@@ -1,11 +1,9 @@
-import sys
 from pathlib import Path
-import clean_folder as f
+import sys
+from main import main
 
-
-def start():
+def start_work():
     if sys.argv[1]:
         folder_for_scan = Path(sys.argv[1])
-        f.main(folder_for_scan.resolve())
-
-start()
+        print(f"Start in folder: {folder_for_scan.resolve()}")
+        main(folder_for_scan.resolve())
