@@ -7,3 +7,6 @@ def start_work():
         folder_for_scan = Path(sys.argv[1])
         print(f"Start in folder: {folder_for_scan.resolve()}")
         clean_folder.main.main(folder_for_scan.resolve())
+    else:
+        current_path = Path('.')
+        clean_folder.main.main(current_path.resolve())
