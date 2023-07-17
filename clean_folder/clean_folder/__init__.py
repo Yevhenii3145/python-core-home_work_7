@@ -9,4 +9,5 @@ def start_work():
         clean_folder.main.main(folder_for_scan.resolve())
     else:
         current_path = Path('.')
+        print(f"Start in current folder: {folder_for_scan.resolve()}")
         clean_folder.main.main(current_path.resolve())
